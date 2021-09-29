@@ -1,0 +1,379 @@
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts
+$ git  version
+git version 2.30.0.windows.1
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts
+$ git  --version
+git version 2.30.0.windows.1
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts
+$ pwd
+/e/gitcts
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts
+$ mkdir projects
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts
+$ pwd
+/e/gitcts
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts
+$ cd projects
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects
+$ pwd
+/e/gitcts/projects
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects
+$ git config  --global user.name "swamy"
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects
+$ git config  --global user.email "palaganiayyappa@gmail.com"
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects
+$ git config  --global --list
+user.name=swamy
+user.email=palaganiayyappa@gmail.com
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects
+$ git clone https://github.com/vijaysekhar06/ctsgit
+Cloning into 'ctsgit'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects
+$ ls
+ctsgit/
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects
+$ cd cts
+bash: cd: cts: No such file or directory
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects
+$ cd ctsgit
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects/ctsgit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects/ctsgit (main)
+$ ls
+README.md
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects/ctsgit (main)
+$ echo "testgit">>start.txt
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects/ctsgit (main)
+$ ls
+README.md  start.txt
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects/ctsgit (main)
+$ cat start.txt
+testgit
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects/ctsgit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        start.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects/ctsgit (main)
+$ git add start.txt
+warning: LF will be replaced by CRLF in start.txt.
+The file will have its original line endings in your working directory
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects/ctsgit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   start.txt
+
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects/ctsgit (main)
+$ git commit -m "adding start.txt"
+[main 16cbacf] adding start.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 start.txt
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects/ctsgit (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects/ctsgit (main)
+$ git push orgin master
+error: src refspec master does not match any
+error: failed to push some refs to 'orgin'
+
+swamy@DESKTOP-P57GQ59 MINGW64 /e/gitcts/projects/ctsgit (main)
+$ cd springbootdockerproject
+
+Git Version Control System
+--------------------------
+A version control system is a software that tracks changes to a file or set of files over time so that you can recall specific versions later. It also allows you to work together with other programmers.
+
+The version control system is a collection of software tools that help a team to manage changes in a source code. It uses a special kind of database to keep track of every modification to the code.
+
+Developers can compare earlier versions of the code with an older version to fix the mistakes.
+
+
+Benefits of the Version Control System
+--------------------------------------
+The Version Control System is very helpful and beneficial in software development; developing software without using version control is unsafe. It provides backups for uncertainty. Version control systems offer a speedy interface to developers. It also allows software teams to preserve efficiency and agility according to the team scales to include more developers.
+
+Some key benefits of having a version control system are as follows.
+------------------------------------------------------------------
+Complete change history of the file
+Simultaneously working
+Branching and merging
+Traceability
+
+Types of Version Control System
+--------------------------------
+Localized version Control System
+Centralized version control systems
+Distributed version control systems
+
+
+	Git
+	----
+Git is a modern and widely used distributed version control system in the world. It is developed to manage projects with high speed and efficiency. The version control system allows us to monitor and work together with our team members at the same workspace.
+
+
+Git is an open-source distributed version control system. It is designed to handle minor to major projects with high speed and efficiency. It is developed to co-ordinate the work among the developers. The version control allows us to track and work together with our team members at the same workspace.
+
+Git is foundation of many services like GitHub and GitLab, but we can use Git without using any other Git services. Git can be used privately and publicly.
+
+Git was created by Linus Torvalds in 2005 to develop Linux Kernel. It is also used as an important distributed version-control tool for the DevOps.
+
+Git is easy to learn, and has fast performance. It is superior to other SCM tools like Subversion, CVS, Perforce, and ClearCase.
+
+What is GitHub?
+--------------
+GitHub is a Git repository hosting service. GitHub also facilitates with many of its features, such as access control and collaboration. It provides a Web-based graphical interface.
+
+GitHub is an American company. It hosts source code of your project in the form of different programming languages and keeps track of the various changes made by programmers.
+
+It offers both distributed version control and source code management (SCM) functionality of Git. It also facilitates with some collaboration features such as bug tracking, feature requests, task management for every project.
+
+ Differences between Git and GitHub
+------------------------------------
+
+Git is a distributed version control tool that can manage a programmer's source code history.	
+GitHub is a cloud-based tool developed around the Git tool.
+
+A developer installs Git tool locally.
+
+GitHub is an online service to store code and push from the computer running the Git tool.
+
+Git focused on version control and code sharing.	
+
+GitHub focused on centralized source code hosting.
+
+Git is a command-line tool.
+	
+GitHub is administered through the web.
+
+
+Git Bash commands
+-----------------
+init
+clone
+add
+status
+commit
+push
+checkout
+reset
+log
+rm
+branch
+merge
+rebase
+stash
+-------------------------------
+https://github.com/vijaysekhar06/mphasis.git
+
+we are having several git commands to perform operations with  git repository.   
+
+Git Repo URL:https://github.com/vijaysekhar06/abcd.git
+
+git help--> it provides frequently used several git commands
+git help<cmd-name>-->It opens documentation of that particular command
+
+git init-->It is used to create empty repository or 
+		re-initialize existing repository
+
+git status-->This command will display status of current repository 
+
+Staged Files  
+------------
+Files which are added and they are ready to commit
+These file names will be displayed in green color
+
+Un-Staged Files
+---------------
+Modified files will be displayed here,we need to stage these files to commit
+These file names will be displayed in red color
+
+Un-Tracked Files
+----------------
+Newly created files,we need to stage them to commit
+These file names also will be displayed in red color
+
+git add--> This command is used to add file to staging area
+	syntax: git add <file-name>
+	syntax: git add --a --------->To add all files at a time
+	syntax: git add .  --------->To add all files at a time
+git rm --> This command is used to un-stage newly created files	
+	syntax: git rm --cached <file-name> ---->To un-stage one file at a time
+		git rm --cached *  ----> To un-stage all files at a time
+git commit: This command is used to commit our changes to git local repository
+	  syntax: git commit -m 'commit-msg'----> 'm' is for message
+Note:When we execute commit command it will consider all the files which are in staging area
+Note: Git local repository will be available in our machine only
+----To Commit our files to remote repository we should execute below commands------
+	1)git remote add origin <repo-url>(This requires only first time)
+	2)git push -u origin master(This is used to move changes from local to central)
+
+git reset: It is used to unstage a file
+	syntax: git reset HEAD <file-name>
+git checkout: It is used to discard changes done in a file
+	syntax: git checkout --<file-name>
+
+----------------------------------------------------------------
+
+
+-->Whenever we commit,git will generate commit-id
+-->commit ID contains 40 alphanumeric characters
+-->From 40 alphanumeric characters it will display first 7 characters to us
+
+-->To check commits history we will use git log command
+
+	syntax: git log
+-->In logs it will display below details
+	a)commit-id
+        b) author
+	c) timestamp
+	d) commit msg
+
+
+
+
+git clone--> To take existing project from repository to local system we will use git clone command
+
+	syntax: git clone <repo-URL>
+
+  
+
+git pull--> Before making any changes to file(s) in local,it is highly recommended 
+          to take latest changes from repository.  
+       To take latest changes from repository we will use "git pull" command
+	syntax: git pull
+
+
+Git Branch
+-------------
+A branch is a version of the repository that diverges from the main working project
+A Git project can have more than one branch. 
+
+Syntax:
+
+$ git branch  <branch name> 
+
+ex: git branch b1
+
+List Branch
+------------
+You can List all of the available branches in your repository
+
+ex:
+git branch --list
+
+note:The symbol * is representing currently active branch
+
+Delete Branch
+-------------
+Syntax:
+
+$ git branch -d<branch name> 
+
+ex: git branch -d b1
+
+Switch Branch
+--------------
+Syntax:
+
+$ git checkout <branch name>
+
+Rename Branch
+-------------
+We can rename the branch with the help of the git branch command.
+
+Syntax:
+
+$ git branch -m <old branch name><new branch name>
+
+Fork vs. Clone
+---------------
+Sometimes people considered the fork as clone command because of their property.
+ Both commands are used to create another copy of the repository. 
+But the significant difference is that the fork is used to create a server-side
+ copy, and clone is used to create a local copy of the repository.
+
+merging
+----------------
+
+
+get clone -b <branch-name> <repo-URL>
+
+
+
+
+
+
+
+
+
+
+problems
+---------
+git remote add origin https://...
+git remote remove master
+git push -u origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
